@@ -1,6 +1,8 @@
 from random import randint
 from time import sleep
+
 esron = voce = empate = 0
+
 print('='*20)
 print("Esron's Jokenpo!")
 print('='*20)
@@ -11,12 +13,12 @@ for c in range(1, 4):
     print('='*20)
     print('''[1] Pedra
 [2] Papel
-[3] Tesoura''')
+[3] Tesoura''') 
     while True:
         jogador = int(input('Qual sua jogada? '))
         if 1 <= jogador <= 3:
             break
-        print('Jogada inválida! Tente novamente.')
+        print('Jogada inválida! Tente novamente.') 
     print('JO')
     sleep(0.5)
     print('KEN')
@@ -57,9 +59,10 @@ for c in range(1, 4):
             print('Rodada empatada!')
             empate += 1
     print('='*20)
-    if empate == esron == voce == 1 or empate == 3:
-        print('-----EMPATE!-----')
-    if esron == 1 and empate == 2 or esron >= 2:
-        print('-----DERROTA!-----')
-    elif voce == 1 and empate == 2 or voce >= 2:
-        print('-----VITÓRIA!-----')
+
+if empate == esron == voce == 1 or empate == 3:
+    print('-----EMPATE!-----')
+if esron == 1 and empate == 2 or esron >= 2:
+    print('-----DERROTA!-----')
+elif voce == 1 and empate == 2 or voce >= 2:
+    print('-----VITÓRIA!-----')
